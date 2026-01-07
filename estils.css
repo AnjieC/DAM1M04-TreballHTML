@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* ocupa toda la altura de la ventana */
+    background-color: rgb(13, 13, 13);
+    /* Fuente: Poiret One */
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Navbar */
+nav{
+    background-color: black;
+    border-bottom: 2px solid cornflowerblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin-left: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover{
+    color: cornflowerblue;
+    letter-spacing: 1.5px;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img{
+    width: 20%;
+    height: auto;
+}
+
+nav h1{
+    color: white;
+}
+#opcatual{
+    pointer-events: none;
+    color: cornflowerblue;
+}
+/* ------ */
+
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    padding: 50px 100px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 40px;
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+footer a:hover{
+    color: rgb(182, 207, 255);
+}
+
+footer p{
+    padding-left: 80px;
+}
+/* ------ */
+
+
+/* Contenido de pagina */
+#contenidopag{
+    flex: 1;    /* ocupa todo el espacio disponible */
+    margin-top: 10%;
+}
+/* ------------------- */
