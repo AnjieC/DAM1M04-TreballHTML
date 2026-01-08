@@ -12,6 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
         <!-- Material Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+        <!-- Lottie library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     </head>
     <body>
         <!-- Navbar -->
@@ -31,7 +33,59 @@
             </nav>
         </header>
         <!-- Contenido de la página -->
-        <div id="contenidopag"></div>
+        <div id="contenidopag">
+            <!-- Hero -->
+            <section>
+                <div class="herocontenido">
+                    <h1>Te atreverías a probar este juego? Vamos, roba una carta...</h1>
+                </div>
+            </section>
+            <!-- Animación scroll -->
+            <section>
+                <h2 class="textocentrado">Trueques a ciegas, que has obtenido? Te sirvió? Saliste ganando o perdiendo?</h2>
+                <div class="animacionscroll">
+                    <img src="./assets/img/logo.png" alt="carta" class="cartaizquierda">
+                    <h2>Intercambio</h2>
+                    <img src="./assets/img/logo.png" alt="carta" class="cartaderecha">
+                </div>                
+            </section>
+            <!-- Animación Lottie -->
+            <section class="animacionlottie">
+                <h2>Observa bien las cosas, piensa rápido, aquí las cartas van y vienen</h2>
+                <div id="lottie-contenedor" class="lottie"></div>
+                <script>
+                lottie.loadAnimation({
+                    container: document.getElementById('lottie-contenedor'), // Elemento del html en donde aparece la animación
+                    renderer: 'svg',        // Renderizado como SVG
+                    loop: true,             // Animación en bucle
+                    autoplay: true,         // reproducción auto
+                    path: './assets/lottie/Card-preloader.json'   // ruta local al .json de la animación
+                });
+                </script>
+            </section>
+            <!-- Introducción del juego -->
+            <section class="introjuego">
+                <h1 class="tituloapartado">Introducción del juego</h1>
+                <h2>Objetivo del juego:</h2>
+                <ul>
+                    <li>Juega tus cartas</li>
+                    <li>Haz que caigan tus rivales</li>
+                    <li>Sobrevive hasta el final, sé el único superviviente y ganador</li>
+                </ul>
+                <h2>Mecánicas:</h2>
+                <ul>
+                    <li>2 vidas, 2 fallos y fuera</li>
+                    <li>Roba cartas de la baraja y de los demás</li>
+                    <li>Pide cartas</li>
+                    <li>Intercambia cartas</li>
+                    <li>Manipula los recursos</li>
+                    <li>Evade</li>
+                    <li>Sabotea a tu rivales</li>
+                    <li>Disfruta del azar</li>
+                </ul>
+                <a href="./instruccions.html">Ver a profundidad...</a>
+            </section>
+        </div>
         <!-- Footer -->
         <footer>
             <a href="https://x.com/" target="_blank"><span class="material-symbols-outlined">clear</span>Twitter/X</a>
