@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;  /* ocupa toda la altura de la ventana */
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(30, 30, 30);
     color: white;
     /* Fuente: Poiret One */
     font-family: "Poiret One", sans-serif;
@@ -102,7 +102,7 @@ footer p{
 /* Contenido de pagina */
 #contenidopag{
     flex: 1;    /* ocupa todo el espacio disponible */
-    margin-top: 30px;
+    margin-top: 3.5%;
 }
 /* ------------------- */
 
