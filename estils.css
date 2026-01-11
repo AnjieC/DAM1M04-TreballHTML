@@ -256,22 +256,39 @@ footer p{
 /* -------------------- */
 
 /* Intrucciones */
-.tituloinstrucciones{
-    display: flex;
-    justify-content: center;
-}
-
 .paginstrucciones{
     width: 80%;
     margin: 0 auto;
+}
+
+.explicacion, .partecartas{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.paginstrucciones div{
-    width: 500px;
-    flex: 0 0 calc(33.333% - 16px); /* 3 columnas */
+.explicacion div{
+    flex: 0 0 calc(33% - 16px); /* 3 columnas */
     box-sizing: border-box;
 }
+
+.quehacecarta{
+    flex: 0 0 calc(28% - 16px); /* 3 columnas */
+    box-sizing: border-box;
+    border: 10px solid rgb(30, 30, 30);
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+.quehacecarta img{
+    width: 100%;
+}
+
+.quehacecarta:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.445);
+    background-color: black;
+    border: 10px solid black;
+}
+/* ------------ */
