@@ -256,3 +256,22 @@ footer p{
 /* -------------------- */
 
 /* Intrucciones */
+.tituloinstrucciones{
+    display: flex;
+    justify-content: center;
+}
+
+.paginstrucciones{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.paginstrucciones div{
+    width: 500px;
+    flex: 0 0 calc(33.333% - 16px); /* 3 columnas */
+    box-sizing: border-box;
+}
