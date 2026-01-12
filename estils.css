@@ -106,6 +106,7 @@ footer p{
 }
 /* ------------------- */
 
+
 /* --Página principal-- */
 /* Hero */
 .herocontenido{
@@ -255,8 +256,9 @@ footer p{
 /* --------------------- */
 /* -------------------- */
 
+
 /* Intrucciones */
-.paginstrucciones{
+.pag{
     width: 80%;
     margin: 0 auto;
 }
@@ -292,3 +294,112 @@ footer p{
     border: 10px solid black;
 }
 /* ------------ */
+
+
+/* Carousel */
+.carousel{
+    border-radius: 12px;
+    box-shadow: 0 7px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel input{    /* Ocultar */
+    display: none;
+}
+
+/* Slides container */
+.slides{
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide{
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    font-weight: 600;
+    justify-content: center;
+    min-height: 450px;
+    min-width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Slide backgrounds */
+.slide:nth-child(1) { background-image: url("./assets/img/escenajuego1.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.slide:nth-child(2) { background-image: url("./assets/img/jugadores.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.slide:nth-child(3) { background-image: url("./assets/img/escenajuego2.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+
+
+/* Slide positioning based on checked radio */
+body:has(#slide1:checked) .slides { transform: translateX(0%); }
+body:has(#slide2:checked) .slides { transform: translateX(-100%); }
+body:has(#slide3:checked) .slides { transform: translateX(-200%); }
+
+/* Navigation arrows */
+.flecha{
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    width: 48px;
+    height: 60px;
+    padding-bottom: 5px;
+    justify-content: center;
+    position: absolute;
+    top: 41%;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.flecha:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+.prev { left: 1rem; }
+.next { right: 1rem; }
+
+    /* Slide 1: solo ir al posterior */
+body:has(#slide1:checked) .flecha_Next1 { display: flex; }
+
+    /* Slide 2: anterior y posterior */
+body:has(#slide2:checked) .flecha_Prev2,
+body:has(#slide2:checked) .flecha_Next2 { display: flex; }
+
+    /* Slide 3: solo ir al anterior */
+body:has(#slide3:checked) .flecha_Prev3 { display: flex; }
+
+/* Puntos de navegacion */
+.dots {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.dot {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    transition: all 0.3s ease;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+/* Punto actual donde estas situado */
+body:has(#slide1:checked) .dots label:nth-child(1),
+body:has(#slide2:checked) .dots label:nth-child(2),
+body:has(#slide3:checked) .dots label:nth-child(3){
+    background: cornflowerblue;
+    transform: scale(1.3);
+}
+/* -------- */
