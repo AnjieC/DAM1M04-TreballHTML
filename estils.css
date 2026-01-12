@@ -421,3 +421,12 @@ body:has(#slide3:checked) .dots label:nth-child(3){
 }
 /* -------- */
 /* -------- */
+
+/* Contacto */
+.direccion{
+    width: 100%; 
+    height: auto;
+    border: 0;
+}
+
+/* -------- */
