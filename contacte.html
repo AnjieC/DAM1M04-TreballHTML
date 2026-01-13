@@ -40,9 +40,69 @@
                     <p>08940 (Cornellà de Llobregat) – Barcelona</p>
                     <iframe class="direccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5989.70354018353!2d2.0763344!3d41.35557550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4995cdcf4979d%3A0xf7993c3566e6151f!2sInstituto%20Esteve%20Terradas%20i%20Illa!5e0!3m2!1ses!2ses!4v1768240508257!5m2!1ses!2ses"></iframe>
                 </div>
-                <div>
+                <div class="enlacecontact">
                     <h2>Llamanos por teléfono:</h2>
                     <a href="tel:+34900123456">+34900123456</a>
+                </div>
+                <div class="enlacecontact">
+                    <h2>Envíanos un correo electrónico:</h2>
+                    <a href="mailto:contact@cartrulet.com">contact@cartrulet.com</a>
+                </div>
+                <div>
+                    <h2>Dinos tu opinión:</h2>
+                    <!-- Formulario -->
+                    <form action="#" method="post">
+                        <!-- Nombre completo -->
+                        <div class="campo">
+                            <label for="nombre_completo" class="cosa_campo">Nombre completo</label><br>
+                            <input 
+                            type="text" 
+                            id="nombre_completo" 
+                            name="nombre_completo" 
+                            placeholder="Ejemplo: Rui Kamishiro" 
+                            pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,40}$" 
+                            title="El nombre solo puede contener letras y espacios, entre 3 y 40 caracteres." 
+                            required>
+                            <span class="aviso">*Este campo es obligatorio.</span>
+                        </div>
+                        <!-- Telefono -->
+                        <div class="campo">
+                            <label for="telefono" class="cosa_campo">Teléfono</label><br>
+                            <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            placeholder="Ejemplo: 600123456" 
+                            pattern="^[0-9]{9}$" 
+                            title="Debe contener 9 números sin espacios ni símbolos"
+                            required>
+                            <span class="aviso">*Este campo es obligatorio.</span>
+                        </div>
+                        <!-- Correo -->
+                        <div class="campo">
+                            <label for="correo" class="cosa_campo">Correo electrónico</label><br>
+                            <input 
+                            type="email" 
+                            id="correo" 
+                            name="correo" 
+                            placeholder="Ejemplo: usuario@correo.com"
+                            required>
+                            <span class="aviso">*Este campo es obligatorio.</span>
+                        </div>
+                        <!-- Comentarios -->
+                        <div class="campo">
+                            <label for="comentarios" class="cosa_campo">Comentarios</label><br>
+                            <textarea 
+                            id="comentarios" 
+                            name="comentarios" 
+                            placeholder="Escribe tu comentario..." 
+                            rows="5" cols="40"></textarea>
+                        </div>
+                        <div id="botones">
+                            <button type="reset" id="boton_reset">Borrar datos</button>
+                            <button type="submit" id="boton_submit">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </div>

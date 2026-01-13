@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;  /* ocupa toda la altura de la ventana */
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(33, 33, 33);
     color: white;
     /* Fuente: Poiret One */
     font-family: "Poiret One", sans-serif;
@@ -297,6 +297,10 @@ footer p{
 
 
 /* Historia */
+.pag p{
+    font-size: larger;
+}
+
 .recorteimg{
     width: 100%;
     height: 600px;
@@ -429,4 +433,100 @@ body:has(#slide3:checked) .dots label:nth-child(3){
     border: 0;
 }
 
+.enlacecontact a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+    margin-left: 20px;
+    font-size: larger;
+}
+
+.enlacecontact a:hover{
+    color: rgb(182, 207, 255);
+}
+
+/* Formulario */
+form{
+    background-color: black;
+    border-radius: 7px;
+    padding: 40px 50px;
+    margin-bottom: 20px;
+}
+
+    /* Campos */
+.campo{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.cosa_campo{
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 7px 2px;
+    left: 3px;
+    border-radius: 7px;
+    pointer-events: none;
+    position: absolute;
+    top: -7px;
+}
+
+    /* ------ */
+
+        /* Input */
+.campo input, select, textarea{
+    border: 3px solid white;
+    border-radius: 7px;
+    font-size: 15px;
+    padding: 11px;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 30px);
+}
+
+.campo input:focus, select:focus, textarea:focus{
+    border-color: cornflowerblue;
+    outline: none;
+}
+        /* ----- */
+
+.aviso{
+    display: none;  /* se oculta aviso de error al hacer focus */
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input:required:invalid:not(:focus):placeholder-shown + .aviso {   /* Mostrar aviso de error cuando esta vacío el campo */
+    display: block;
+}
+
+#botones{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+#boton_submit, #boton_reset{
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    padding: 7px 17px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    margin-right: 15px;
+}
+
+#boton_submit:hover{
+    background-color: rgb(0, 36, 102);
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+}
+
+#boton_reset:hover{
+    background-color: rgb(126, 0, 0);
+    color: red;
+    border: 2px solid red;
+}
+/* ---------- */
 /* -------- */
