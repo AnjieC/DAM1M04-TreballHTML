@@ -33,23 +33,29 @@
         <!-- Contenido de la página -->
         <div id="contenidopag">
             <section class="pag">
+                <!-- Contacto -->
                 <h1 class="tituloapartado">Contacto</h1>
+                <!-- Dirección -->
                 <div>
                     <h2>Dirección:</h2>
+                    <!-- Dirección del insti porque no sabía que poner xd -->
                     <p>Carrer Bonavista, 70</p>
                     <p>08940 (Cornellà de Llobregat) – Barcelona</p>
                     <iframe class="direccion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5989.70354018353!2d2.0763344!3d41.35557550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4995cdcf4979d%3A0xf7993c3566e6151f!2sInstituto%20Esteve%20Terradas%20i%20Illa!5e0!3m2!1ses!2ses!4v1768240508257!5m2!1ses!2ses"></iframe>
                 </div>
+                <!-- Teléfono -->
                 <div class="enlacecontact">
                     <h2>Llamanos por teléfono:</h2>
                     <a href="tel:+34900123456">+34900123456</a>
                 </div>
+                <!-- Mail -->
                 <div class="enlacecontact">
                     <h2>Envíanos un correo electrónico:</h2>
                     <a href="mailto:contact@cartrulet.com">contact@cartrulet.com</a>
                 </div>
+                <!-- Parte formulario -->
                 <div>
-                    <h2>Dinos tu opinión:</h2>
+                    <h2>Dinos tu petición:</h2>
                     <!-- Formulario -->
                     <form action="#" method="post">
                         <!-- Nombre completo -->
@@ -65,7 +71,7 @@
                             required>
                             <span class="aviso">*Este campo es obligatorio.</span>
                         </div>
-                        <!-- Telefono -->
+                        <!-- Teléfono -->
                         <div class="campo">
                             <label for="telefono" class="cosa_campo">Teléfono</label><br>
                             <input 
@@ -89,18 +95,19 @@
                             required>
                             <span class="aviso">*Este campo es obligatorio.</span>
                         </div>
-                        <!-- Comentarios -->
+                        <!-- Petición -->
                         <div class="campo">
-                            <label for="comentarios" class="cosa_campo">Comentarios</label><br>
+                            <label for="comentarios" class="cosa_campo">Petición</label><br>
                             <textarea 
                             id="comentarios" 
                             name="comentarios" 
-                            placeholder="Escribe tu comentario..." 
+                            placeholder="Escribe tu petición..." 
                             rows="5" cols="40"></textarea>
                         </div>
+                        <!-- Botones de reset y submit -->
                         <div id="botones">
-                            <button type="reset" id="boton_reset">Borrar datos</button>
-                            <button type="submit" id="boton_submit">Enviar</button>
+                            <button type="reset" id="boton_reset"><strong>Borrar datos</strong></button>
+                            <button type="submit" id="boton_submit"><strong>Enviar</strong></button>
                         </div>
                     </form>
                 </div>

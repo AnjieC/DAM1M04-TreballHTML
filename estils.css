@@ -461,7 +461,7 @@ form{
 
 .cosa_campo{
     color: cornflowerblue;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
     padding: 0 7px 2px;
     left: 3px;
@@ -481,6 +481,10 @@ form{
     padding: 11px;
     transition: border-color 0.3s ease;
     width: calc(100% - 30px);
+    /* Fuente: Poiret One */
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .campo input:focus, select:focus, textarea:focus{
@@ -510,11 +514,15 @@ input:required:invalid:not(:focus):placeholder-shown + .aviso {   /* Mostrar avi
     border-radius: 7px;
     background-color: black;
     color: white;
-    font-size: 17px;
     padding: 7px 17px;
     cursor: pointer;
-    transition: background-color 0.2s linear;
+    transition: all 0.2s linear;
     margin-right: 15px;
+    font-size: 20px;
+    /* Fuente: Poiret One */
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #boton_submit:hover{
